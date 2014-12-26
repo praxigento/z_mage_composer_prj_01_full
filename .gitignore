@@ -1,0 +1,16 @@
+/.idea
+/atlassian-ide-plugin.xml
+/composer.lock
+/mage/.htaccess
+/mage/api.php
+/mage/cron.php
+/mage/cron.sh
+/mage/favicon.ico
+/mage/get.php
+/mage/index.php
+/mage/install.php
+/mage/mage
+/vendor
+/mage/var/cache
+/mage/var/session
+/mage/app/etc/local.xml
