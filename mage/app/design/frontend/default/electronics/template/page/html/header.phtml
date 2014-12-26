@@ -1,0 +1,113 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<p id="back-top">
+		<a href="javascript:void(0);"><span></span>Back to Top</a>
+	</p>
+<header id="header">
+<article class="header_article">
+<section cite="header_first_section">
+<div class="header-top-container">
+	<div class="header-top container">
+		<div class="row-fluid">
+			<div class="header_top_links span6">
+			<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('top_links')->toHtml() ?> 
+			</div>
+			<div class="currencylaguage span6">
+<div class="lang">
+			<?php echo $this->getChildHtml('store_language') ?> 
+</div>
+<div class="currency">
+			<?php echo $this->getLayout()->createBlock('directory/currency')->setTemplate('directory/currency.phtml')->toHtml() ?>
+</div>
+<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<section class="header_second_section">
+<div class="header-container">
+    <div class="header container">
+
+<div class="logocartcon span8">
+
+<div class="logocontainer span4">
+        <?php if ($this->getIsHomePage()):?>
+        <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+        <?php else:?>
+        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+        <?php endif?>
+</div>
+
+<div class="cartlinkscotainer span4">
+<div class="cart_items">
+<?php $cart = Mage::helper('checkout/cart')->getCart()->getItemsCount();
+if($cart>1)
+echo 'You have <a href="'.$this->getUrl('checkout/cart').'">'. $cart.'</a> Items';
+else
+echo 'You have <a href="'.$this->getUrl('checkout/cart').'">'. $cart.'</a> Item';
+ ?>
+<a href="<?php echo $this->getUrl('checkout/cart') ?>" class="cart_link"></a>
+</div>
+        <div class="quick-access">
+            <?php echo $this->getChildHtml('topLinks') ?>
+        </div>
+ </div> 
+
+</div>
+<div class="searchcotainer span4">
+	    <?php echo $this->getChildHtml('topSearch') ?>
+            <p class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
+</div>
+<?php echo $this->getChildHtml('topContainer'); ?>
+
+    </div>
+</div>
+</section>
+</article>
+</header>
+<?php echo $this->getChildHtml('topMenu') ?>
+<?php $routeName = Mage::app()->getRequest()->getRouteName();
+$identifier = Mage::getSingleton('cms/page')->getIdentifier(); ?>
+<?php // if ($this->getIsHomePage()):?>
+<?php if($routeName == 'cms' && $identifier == 'home'): ?>
+<div class="home_banner_container">
+<div class="home_banner container">
+<div id="myCarousel" class="carousel_no slide">
+<div class="carousel-inner"> 
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('banner')->toHtml() ?> 
+</div>
+<!--<a class="carousel-control left" href="#myCarousel" data-slide="prev">â?¹</a>  
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">â?º</a>--> 
+</div>
+</div>
+</div>
+<?php endif?>
+

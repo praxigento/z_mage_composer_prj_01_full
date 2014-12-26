@@ -1,0 +1,108 @@
+body {
+ padding-right: 20px;
+ padding-left: 20px;
+}
+ .navbar-fixed-top,  .navbar-fixed-bottom,  .navbar-static-top {
+ margin-right: -20px;
+ margin-left: -20px;
+}
+ .container-fluid {
+ padding: 0;
+}
+ .dl-horizontal dt {
+ float: none;
+ width: auto;
+ clear: none;
+ text-align: left;
+}
+ .dl-horizontal dd {
+ margin-left: 0;
+}
+ .container {
+ width: auto;
+}
+ .row-fluid {
+ width: 100%;
+}
+ .row,  .thumbnails {
+ margin-left: 0;
+}
+ .thumbnails > li {
+ float: none;
+ margin-left: 0;
+}
+ [class*="span"],  .row-fluid [class*="span"] {
+ display: block;
+ float: none;
+ width: 100%;
+ margin-left: 0;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+ .span12,  .row-fluid .span12 {
+ width: 100%;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+ .input-large,  .input-xlarge,  .input-xxlarge,  input[class*="span"],  select[class*="span"],  textarea[class*="span"],  .uneditable-input {
+ display: block;
+ width: 100%;
+ min-height: 30px;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+ .input-prepend input,  .input-append input,  .input-prepend input[class*="span"],  .input-append input[class*="span"] {
+ display: inline-block;
+ width: auto;
+}
+ .controls-row [class*="span"] + [class*="span"] {
+ margin-left: 0;
+}
+ .modal {
+ position: fixed;
+ top: 20px;
+ right: 20px;
+ left: 20px;
+ width: auto;
+ margin: 0;
+}
+ .modal.fade.in {
+ top: auto;
+}
+ ul.promo {
+ margin: 10px 0 0;
+ padding: 0;
+}
+ .quickBtn {
+display:none;
+}
+
+/* Theme Styles */
+
+.header-top-container, .header-container, .nav-container, .mobMenu, .main-container, .footer-container, .footer-links, .footer_top_arrow, .footer_bot_arrow, .home_banner_container{ margin-left:-18px; margin-right:-18px;}
+.header-top-container a{display: inline;float: none;}
+.header-top-container .row-fluid .currencylaguage{width:290px; margin:0 auto !important;min-height:0;}
+.header-top-container .form-language{padding: 5px 0 5px 10px;}
+.currency{margin: 11px 5px 11px 0 ;}
+.logocartcon.span8{float: left;}
+.header h1.logo {margin: 0!important;padding: 0!important; text-align:center;}
+.header .logo, .logocontainer.span4{float: none; text-align: center;}
+.searchcotainer.span4, .cartlinkscotainer.span4{float: right;}
+.cart_items{float: none;margin: 0 auto 7px;}
+.header .logo{margin:3px 0 10px 0px!important;}
+.header .links li{padding: 0 6px;}
+.header .quick-access{float: none; text-align: center;min-width: 281px !important;}
+.header .form-search{ margin: 7px auto 0 !important;}
+.header .welcome-msg{margin: 10px 0 0;text-align: center;}
+.searchcotainer.span4{margin:10px 0 0 0;}
+.footer address, .share_links{ float: none; text-align:center;}
+.sidebar.span3{padding-top:10px; clear:both;}
+.products-grid .product-name, .short_desc{text-align:center;}
+.products-list li.item a {margin: 0 auto !important;}
+.wishlist-index-index .responsive_table{width: 300px;margin: 0 auto;}
+.my-account .page-title.title-buttons h1{width: 100%; text-align: center;}
+.cart-table .btn-update, .cart-table .btn-continue{margin-bottom:10px;}
+.header .searchcotainer.span4 .form-search{float:none;}
