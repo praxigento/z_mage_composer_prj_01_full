@@ -13,8 +13,10 @@
   ],
   "require": {
     "magento-hackathon/magento-composer-installer": "*",
+    "magento-hackathon/composer-command-integrator": "*",
     "magento/core": "1.9.1.0",
     "magento-hackathon/hackathon_magemonitoring": "*",
+    "connect20/nmmlm_log": "*",
     "praxigento/z_mage_composer_mod_01": "*",
     "praxigento/z_mage_composer_mod_02": "*"
   },
