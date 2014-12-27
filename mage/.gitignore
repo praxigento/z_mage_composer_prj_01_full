@@ -12956,3 +12956,9 @@
 /./lib/Log4php/renderers/LoggerRendererException.php
 /./lib/Log4php/renderers/LoggerRendererMap.php
 /./lib/Log4php/xml/log4php.dtd
+/app/code/community/Praxigento/HhComposerModule02/etc/config.xml
+/app/design/frontend/default/default/layout/praxigento/HhComposerModule02.xml
+/app/design/frontend/default/default/template/praxigento/HhComposerModule02/after.phtml
+/app/code/community/Praxigento/HhComposerModule01/etc/config.xml
+/app/design/frontend/default/default/layout/praxigento/HhComposerModule01.xml
+/app/design/frontend/default/default/template/praxigento/HhComposerModule01/before.phtml
